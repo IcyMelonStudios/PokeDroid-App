@@ -326,7 +326,7 @@ class DownloadFileFromURL extends AsyncTask<String, String, String> {
 
             try {
 
-                URL url = new URL("http://sys81184.leet.cc/versions/v1_0_0.zip");
+                URL url = new URL("https://github.com/IcyMelonStudios/PokeDroidPE/raw/master/builds/v1_0_0.zip");
                 //https://www.dropbox.com/s/e7xoc5zdx0l1pmk/v1_0_0.zip?dl=1
                 File SDCardRoot = Environment.getExternalStorageDirectory();
                 File file = new File(SDCardRoot, "PokeDroidPE/versions/v1_0_0.zip");
