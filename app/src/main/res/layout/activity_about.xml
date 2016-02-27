@@ -330,6 +330,57 @@
                     android:layout_alignStart="@+id/textView21"
                     android:id="@+id/relativeLayout8">
                     ​
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/hexdro_box"
+                        android:layout_below="@+id/anti_box"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true">
+                        ​
+                        <view
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/view8"
+                            android:src="@drawable/anti"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view8"
+                            android:layout_toEndOf="@+id/view8"
+                            android:paddingLeft="10dp" >
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cam Nguyen (Hexdro)"
+                                android:id="@+id/textView24"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="For allowing us to use code from his PokeCube Mod. "
+                                android:id="@+id/textView25"
+                                android:layout_below="@+id/textView24"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="fill_parent"
                         android:layout_height="60dp"
@@ -386,12 +437,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pokemon™, all names used in this mod belong to Nintendo"
-                    android:id="@+id/textView24"
+                    android:id="@+id/pktm"
                     android:textColor="#ffa52f27"
                     android:layout_below="@+id/relativeLayout8"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="10dp" />
+
             </RelativeLayout>
         </RelativeLayout>
         ​
