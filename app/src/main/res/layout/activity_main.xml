@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/material_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/header_container"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_material"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Authentication"
+            android:id="@+id/textView"
+            android:textColor="#FFF"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/editText"
+        android:background="@drawable/pbtn_thin"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:hint="Password"
+        android:maxWidth="500dp"
+        android:textColor="#FFF"
+        android:inputType="textPassword"
+        android:textColorHint="#fff8f8f8"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:paddingLeft="35dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/editText2"
+        android:hint="In-Game Username"
+
+        android:background="@drawable/pbtn_thin"
+        android:maxWidth="500dp"
+        android:textColor="#FFF"
+        android:textColorHint="#fff8f8f8"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:paddingLeft="35dp"
+        android:layout_below="@+id/header_container"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageButton"
+                android:background="@drawable/pbtn_round"
+                android:layout_below="@+id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

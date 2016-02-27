@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pokedroid PE</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_feature_not_added">FeatureNotAddedActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+</resources>

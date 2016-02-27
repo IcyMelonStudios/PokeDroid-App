@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="net.icymelon.pokedroid_pe.pokedroidpe.FeatureNotAddedActivity"
+    android:background="@drawable/material_bg"
+
+    android:gravity="clip_vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="50dp"
+        android:id="@+id/relativeLayout"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Error"
+            android:id="@+id/err_title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="The page you are trying to access is currently incomplete or not available in this version of the app. Please wait for a future update or check your Play Store for updates."
+            android:id="@+id/err_msg"
+            android:layout_below="@+id/err_title"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFF"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6403892120774730/6222958009"/>
+
+</RelativeLayout>

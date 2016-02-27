@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>MenuActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MenuActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">net.icymelon.pokedroid_pe.pokedroidpe; 
+ 
+</span><span class="s0">import </span><span class="s1">android.app.AlertDialog; 
+</span><span class="s0">import </span><span class="s1">android.content.DialogInterface; 
+</span><span class="s0">import </span><span class="s1">android.content.Intent; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.ActionBarActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.view.Menu; 
+</span><span class="s0">import </span><span class="s1">android.view.MenuItem; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+ 
+</span><span class="s0">import </span><span class="s1">com.parse.ParseInstallation; 
+ 
+ 
+</span><span class="s0">public class </span><span class="s1">MenuActivity </span><span class="s0">extends </span><span class="s1">ActionBarActivity { 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_menu); 
+ 
+ 
+        ParseInstallation.getCurrentInstallation().saveInBackground(); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">click_play(View v){ 
+        </span><span class="s2">/*Intent intent = new Intent(this,LoadingActivity.class); 
+        startActivity(intent);*/</span><span class="s1"> 
+        showPlayDialog(); 
+    } 
+    </span><span class="s0">public void </span><span class="s1">click_server(View v){ 
+        Intent intent = </span><span class="s0">new </span><span class="s1">Intent(</span><span class="s0">this</span><span class="s1">,MainActivity.</span><span class="s0">class</span><span class="s1">); 
+        startActivity(intent); 
+    } 
+    </span><span class="s0">public void </span><span class="s1">click_shop(View v){ 
+        ErrorActivity.show(</span><span class="s0">this</span><span class="s1">,</span><span class="s3">&quot;Error&quot;</span><span class="s1">,</span><span class="s3">&quot;The page you are trying to access has not been added yet. Please wait for a future update to use this feature.&quot;</span><span class="s1">); 
+    } 
+    </span><span class="s0">public void </span><span class="s1">click_links(View v){ 
+ 
+        Intent intent = </span><span class="s0">new </span><span class="s1">Intent(</span><span class="s0">this</span><span class="s1">,AboutActivity.</span><span class="s0">class</span><span class="s1">); 
+        startActivity(intent); 
+ 
+    } 
+    </span><span class="s0">public void </span><span class="s1">click_donate(View v){ 
+ 
+        ErrorActivity.show(</span><span class="s0">this</span><span class="s1">,</span><span class="s3">&quot;Error&quot;</span><span class="s1">,</span><span class="s3">&quot;The page you are trying to access has not been added yet. Please wait for a future update to use this feature.&quot;</span><span class="s1">); 
+ 
+    } 
+ 
+ 
+    </span><span class="s0">public void </span><span class="s1">showPlayDialog(){ 
+        AlertDialog.Builder builder = </span><span class="s0">new </span><span class="s1">AlertDialog.Builder(</span><span class="s0">this</span><span class="s1">); 
+        </span><span class="s2">//builder.setTitle(&quot;&quot;);</span><span class="s1"> 
+        builder.setItems(</span><span class="s0">new </span><span class="s1">CharSequence[] 
+                        {</span><span class="s3">&quot;Install only&quot;</span><span class="s1">, </span><span class="s3">&quot;Play only&quot;</span><span class="s1">}, 
+                </span><span class="s0">new </span><span class="s1">DialogInterface.OnClickListener() { 
+                    </span><span class="s0">public void </span><span class="s1">onClick(DialogInterface dialog, </span><span class="s0">int </span><span class="s1">which) { 
+                        </span><span class="s2">// The 'which' argument contains the index position</span><span class="s1"> 
+                        </span><span class="s2">// of the selected item</span><span class="s1"> 
+                        </span><span class="s0">switch </span><span class="s1">(which) { 
+                            </span><span class="s0">case </span><span class="s4">0</span><span class="s1">: 
+ 
+                                Intent intent2 = </span><span class="s0">new </span><span class="s1">Intent(MenuActivity.</span><span class="s0">this</span><span class="s1">,LoadingActivity.</span><span class="s0">class</span><span class="s1">); 
+                                intent2.putExtra(</span><span class="s3">&quot;PLAY_MODE&quot;</span><span class="s1">,</span><span class="s4">1</span><span class="s1">); 
+                                startActivity(intent2); 
+ 
+                                </span><span class="s0">break</span><span class="s1">; 
+                            </span><span class="s0">case </span><span class="s4">1</span><span class="s1">: 
+ 
+                                Intent intent3 = </span><span class="s0">new </span><span class="s1">Intent(MenuActivity.</span><span class="s0">this</span><span class="s1">,LoadingActivity.</span><span class="s0">class</span><span class="s1">); 
+                                intent3.putExtra(</span><span class="s3">&quot;PLAY_MODE&quot;</span><span class="s1">,</span><span class="s4">2</span><span class="s1">); 
+                                startActivity(intent3); 
+ 
+                                </span><span class="s0">break</span><span class="s1">; 
+                        } 
+                    } 
+                }); 
+        builder.create().show(); 
+    } 
+ 
+ 
+    @Override 
+    </span><span class="s0">public boolean </span><span class="s1">onCreateOptionsMenu(Menu menu) { 
+        </span><span class="s2">// Inflate the menu; this adds items to the action bar if it is present.</span><span class="s1"> 
+        getMenuInflater().inflate(R.menu.menu_menu, menu); 
+        </span><span class="s0">return true</span><span class="s1">; 
+    } 
+ 
+    @Override 
+    </span><span class="s0">public boolean </span><span class="s1">onOptionsItemSelected(MenuItem item) { 
+        </span><span class="s2">// Handle action bar item clicks here. The action bar will</span><span class="s1"> 
+        </span><span class="s2">// automatically handle clicks on the Home/Up button, so long</span><span class="s1"> 
+        </span><span class="s2">// as you specify a parent activity in AndroidManifest.xml.</span><span class="s1"> 
+        </span><span class="s0">int </span><span class="s1">id = item.getItemId(); 
+ 
+        </span><span class="s2">//noinspection SimplifiableIfStatement</span><span class="s1"> 
+        </span><span class="s0">if </span><span class="s1">(id == R.id.action_settings) { 
+            </span><span class="s0">return true</span><span class="s1">; 
+        } 
+ 
+        </span><span class="s0">return super</span><span class="s1">.onOptionsItemSelected(item); 
+    } 
+} 
+</span></pre>
+</body>
+</html>

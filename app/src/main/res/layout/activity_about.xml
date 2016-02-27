@@ -1,0 +1,400 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.icymelon.pokedroid_pe.pokedroidpe.AboutActivity"
+    android:background="@drawable/material_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+            ​
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/logo_material" />
+            ​
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/card"
+                android:padding="20dp"
+                android:id="@+id/team_box">
+                ​
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Our Team"
+                    android:id="@+id/textView8"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="#fff44437" />
+                ​
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_alignLeft="@+id/textView8"
+                    android:layout_alignStart="@+id/textView8">
+                    ​
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/relativeLayout2">
+                        ​
+                        <view
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:id="@+id/view"
+                            android:src="@drawable/nyklu"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view"
+                            android:layout_toEndOf="@+id/view"
+                            android:paddingLeft="10dp">
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ingvaras Gelinskas (Nyklu)"
+                                android:id="@+id/textView9"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Founder"
+                                android:id="@+id/textView10"
+                                android:layout_below="@+id/textView9"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    ​
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/relativeLayout3">
+                        ​
+                        <view
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/view2"
+                            android:src="@drawable/aditya"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view2"
+                            android:layout_toEndOf="@+id/view2"
+                            android:paddingLeft="10dp" >
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aditya Kharote (Akharote1)"
+                                android:id="@+id/textView11"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lead Developer"
+                                android:id="@+id/textView12"
+                                android:layout_below="@+id/textView11"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    ​
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/relativeLayout3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/relativeLayout4">
+                        ​
+                        <view
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/view3"
+                            android:src="@drawable/nathan"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view3"
+                            android:layout_toEndOf="@+id/view3"
+                            android:paddingLeft="10dp" >
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nathan Jamieson"
+                                android:id="@+id/textView13"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lead Builder/Modeller"
+                                android:id="@+id/textView14"
+                                android:layout_below="@+id/textView13"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    ​
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/relativeLayout4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/relativeLayout5">
+                        ​
+                        <view
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/view4"
+                            android:src="@drawable/dan"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view4"
+                            android:layout_toEndOf="@+id/view4"
+                            android:paddingLeft="10dp" >
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Daniel Shim (DanHerePE)"
+                                android:id="@+id/textView15"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Developer"
+                                android:id="@+id/textView16"
+                                android:layout_below="@+id/textView15"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    ​
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/relativeLayout5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/relativeLayout6">
+                        ​
+                        <view
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/view5"
+                            android:src="@drawable/juan"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view5"
+                            android:layout_toEndOf="@+id/view5"
+                            android:paddingLeft="10dp" >
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Juan Goodwin (CowNation)"
+                                android:id="@+id/textView17"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Modeller"
+                                android:id="@+id/textView18"
+                                android:layout_below="@+id/textView17"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    ​
+                </RelativeLayout>
+            </RelativeLayout>
+            ​
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:padding="20dp"
+                android:layout_below="@+id/team_box"
+                android:layout_alignLeft="@+id/team_box"
+                android:layout_alignStart="@+id/team_box"
+                android:id="@+id/relativeLayout7">
+                ​
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special thanks"
+                    android:id="@+id/textView21"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="20dp"
+                    android:textColor="#fff44437" />
+                ​
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView21"
+                    android:layout_alignLeft="@+id/textView21"
+                    android:layout_alignStart="@+id/textView21"
+                    android:id="@+id/relativeLayout8">
+                    ​
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:id="@+id/anti_box" >
+                        ​
+                        <view
+                            class="de.hdodenhof.circleimageview.CircleImageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/view7"
+                            android:src="@drawable/anti"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        ​
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/view7"
+                            android:layout_toEndOf="@+id/view7"
+                            android:paddingLeft="10dp" >
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Antonio Vlasic (AntiModPE)"
+                                android:id="@+id/textView22"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+                            ​
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Models and general help"
+                                android:id="@+id/textView23"
+                                android:layout_below="@+id/textView22"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    ​
+                </RelativeLayout>
+                ​
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pokemon™, all names used in this mod belong to Nintendo"
+                    android:id="@+id/textView24"
+                    android:textColor="#ffa52f27"
+                    android:layout_below="@+id/relativeLayout8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        ​
+    </ScrollView>
+    ​
+</RelativeLayout>
